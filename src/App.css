@@ -1,22 +1,101 @@
-.App {
-  text-align: center;
+body{
+  padding: 0px 20px;
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1{
+  background-color: black;
   color: white;
+  margin: -20px;
+  padding: 20px;
+}
+.sub-headline{
+  background-color: black;
+  color: white;
+  margin: -20px;
+  padding: 10px 20px 30px 20px;
+}
+h3{
+  padding-top: 20px;
 }
 
-.App-link {
-  color: #09d3ac;
+h3, h2{
+  margin-bottom: 0.3rem;
+}
+
+h2{
+  padding-top: 20px;
+}
+
+ul, ol{
+  list-style: none;
+  padding-inline-start: 10px;
+  font-size: .5rem;
+}
+
+#header {
+  background-color: lightgray;
+  font-size: 0.8rem;
+  padding: 0px 20px 0px 20px; 
+  margin: 0px -20px;
+  font-style: italic;
+}
+#header h3{
+  margin: 0px;
+}
+#solution {
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  padding: 20px;
+  margin: 30px -20px 0px -20px;
+  font-style: italic;
+}
+
+.trans-history{
+  background: #2e2e2e;
+  color: white;
+  margin: 0px -20px;
+  padding: 0px 20px 20px 20px;
+}
+li.transaction ul, li.monthly-totals ul{
+  display: flex;
+  margin-left: 0px;
+  list-style: none;
+  
+}
+.transaction ul li, .monthly-totals ul li{
+  padding: 0px;
+  margin-top: 5px;
+  min-width: 100px;
+  border-right: 0px solid lightgray;
+}
+.monthly-totals:nth-child(3n){
+  padding-bottom: 10px;
+  border-bottom: 1px dashed lightgray;
+}
+.monthly-totals:nth-child(3n+1){
+  padding-top: 5px;
+}
+.transaction li:last-child{
+  border-right: 0px;
+}
+.transaction ul li.customer-field, .monthly-totals ul li.customer-field{
+  min-width: 140px;
+}
+.show-months:after{
+  content: ", ";
+}
+.show-months:last-child:before{
+  content: "and ";
+}
+.show-months:last-child:after{
+  content: "";
+}
+.highlight-01{
+  color: green;
+  font-weight: bold;
+}
+#footer{
+
 }
